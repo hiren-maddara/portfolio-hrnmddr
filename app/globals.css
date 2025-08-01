@@ -22,6 +22,11 @@
     @apply font-primary bg-primary text-white leading-loose;
   }
 }
+.container {
+  @apply m-auto p-[15px]
+}
+
+/* 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -131,3 +136,5 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
+
+*/
