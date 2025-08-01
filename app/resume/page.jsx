@@ -137,9 +137,7 @@ import { motion } from 'framer-motion'
 
 function Resume() {
     return (
-        <motion.div initial={{opacity: 0}}
-            animate={{opacity: 1, transition: {delay: 2.4, duration: 0.4, ease: "easeIn"}}}
-            className='min-h-[80vh] flex items-center
+        <section className='min-h-[80vh] flex items-center
             justify-center xl:py-0'
         >
 
@@ -242,14 +240,14 @@ function Resume() {
 
                         {/* about me */}
                         <TabsContent value="about" className="w-full text-center xl:text-left">
-                            <div className='flex flex-col gap-[30px] items-center'>
+                            <div className='flex flex-col gap-[30px] items-start'>
                                 <h3 className='text-4xl font-bold'>{about.title}</h3>
                                 <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>{about.description}</p>
-                                <ul className='grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px]'>
+                                <ul className='grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-6'>
                                     {about.info.map((item, i) => (
                                         <li key={i} className='flex gap-4'>
                                             <span className='text-white/60 '>{item.fieldName}</span>
-                                            <span className='text-xl' >{item.fieldValue}</span>
+                                            <span className='text-xl text-left'>{item.fieldValue}</span>
                                         </li>
                                     ))}
                                 </ul>
@@ -259,7 +257,7 @@ function Resume() {
                 </Tabs>
             </div>
 
-        </motion.div>
+        </section>
     )
 }
 

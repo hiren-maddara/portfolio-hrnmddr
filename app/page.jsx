@@ -1,11 +1,40 @@
 import { Button } from "@/components/ui/button";
 import {FiDownload} from "react-icons/fi"
 import Socials from "@/components/Socials";
+import { BsArrowDownRight } from "react-icons/bs";
+import { motion } from "framer-motion";
+import Link from "next/link";
+
+const services = [
+    {
+        num: '01',
+        title: 'Web Development',
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ea error vitae sint earum enim obcaecati, reprehenderit neque quo! Sapiente ipsam placeat perferendis ab hic magni modi possimus laborum nobis.",
+        href: ""
+    },
+    {
+        num: '02',
+        title: 'UI/UX development',
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ea error vitae sint earum enim obcaecati, reprehenderit neque quo! Sapiente ipsam placeat perferendis ab hic magni modi possimus laborum nobis.",
+        href: ""
+    },
+    {
+        num: '03',
+        title: 'Full stack Integration',
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ea error vitae sint earum enim obcaecati, reprehenderit neque quo! Sapiente ipsam placeat perferendis ab hic magni modi possimus laborum nobis.",
+        href: ""
+    },
+    {
+        num: '04',
+        title: 'Research Assistance',
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ea error vitae sint earum enim obcaecati, reprehenderit neque quo! Sapiente ipsam placeat perferendis ab hic magni modi possimus laborum nobis.",
+        href: ""
+    },
+]
 
 export default function Home() {
   return (
-    <main className="h-full">
-      <section className="container mx-auto h-full">
+    <main className="h-full container">
         <div className="flex items-center justify-center">
           {/* intro text */}
           <div className="text-center">
@@ -37,11 +66,7 @@ export default function Home() {
             </div>
 
           </div>
-        </div>
-      </section>
-
-
-      
+        </div>      
     </main>
   );
 }

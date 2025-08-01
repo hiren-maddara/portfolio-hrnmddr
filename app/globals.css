@@ -14,7 +14,7 @@
 
   --color-primary: #141820;
     --color-accent: #e8a702;
-    --color-accent/hover: #fdbf22
+    --color-accent-hover: #fdbf22
 }
 
 @layer base {

@@ -35,16 +35,11 @@ import {motion} from 'framer-motion'
 function Services() {
     return (
         <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
-            <div className="container mx-auto">
-                <motion.div 
-                    initial={{opacity: 0}}
-                    animate={{
-                        opacity: 1,
-                        transition: {delay: 2.4, duration: 0.4, ease: "easeIn"}
-                    }}
-
-                    className='grid grid-cols-1 md:grid-cols-2 gap-[60px]'
-                >
+            <h1 className="h1 text-accent text-center mb-12"> 
+                Here's what I do
+            </h1>
+            
+            <div className="container grid grid-cols-1 md:grid-cols-2 gap-[60px] mb-8">
                     {services.map((service, index) => {
                         return <div key={index} className='flex-1 flex flex-col justify-center gap-6 group'>
                             
@@ -71,7 +66,6 @@ function Services() {
 
                         </div>
                     })}
-                </motion.div>
             </div>
         </section>
     )
