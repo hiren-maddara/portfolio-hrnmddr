@@ -52,10 +52,12 @@ export default function Home() {
             {/* button and socials */}
             <div className="flex flex-col xl:flex-row justify-center items-center gap-8">
               
-              <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
-                <Link href="assets/resume/HrnMddrCV.pdf" target="_blank" rel="noopener noreferrer">View CV</Link>
-                <FiDownload className="text-xl" />
-              </Button>
+              <Link href="assets/resume/HrnMddrCV.pdf" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
+                  View CV
+                  <FiDownload className="text-xl" />
+                </Button>
+              </Link>
 
               {/* socials */}
               <div className="mb-8 xl:mb-0">

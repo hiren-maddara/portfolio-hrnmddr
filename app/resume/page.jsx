@@ -10,11 +10,11 @@ import {SiNextdotjs, SiTailwindcss, SiNetlify, SiSupabase, SiMysql, SiElectron, 
 // about data
 const about = {
     title: "About me",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quasi? Totam magnam recusandae accusamus. Iure, quo non! Blanditiis, eos qui ea accusantium ab magnam repellendus, nostrum voluptas impedit reiciendis error!",
+    description: "I enjoy learning, connecting with people, and exploring meaningful conversations; from the everyday to the philosophical. Openmindedness has shaped my integrated, well-rounded approach to life and work",
     info: [
         {
             fieldName: "Name",
-            fieldValue: "Hiren Maddara"
+            fieldValue: "Hiren M. Maddara"
         },
         
         {
@@ -31,11 +31,11 @@ const about = {
         },
         {
             fieldName: "Languages",
-            fieldValue: "English (C2), Italian (A2)"
+            fieldValue: "English (C2), Italian (A2), Luganda(B2)"
         },
         {
             fieldName: "Hobbies",
-            fieldValue: "Coding, Research/Learning, Writing, Reading, Guitar Jamming"
+            fieldValue: "Coding, Research/Learning, Writing, Reading, Guitar/Jamming"
         },
     ]
 }
@@ -44,7 +44,7 @@ const about = {
 const experience = {
     icon: "/assets/resume/file.svg",
     title: "My experience",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quasi? Totam magnam recusandae accusamus. Iure, quo non! Blanditiis, ",
+    description: "My background is rooted in hands-on projects, freelance and collaborative work. Vist my Work page to learn more",
     items: [
         {
             company: "Freelance",
@@ -52,14 +52,19 @@ const experience = {
             duration: "2022 - present"
         },
         {
-            company: "UNIPD CARS python data analysis",
-            position: "Participant",
-            duration: "Fall 2024"
+            company: "Freelance",
+            position: "Frontend Web developer",
+            duration: "2022 - present"
         },
         {
-            company: "Freelance",
-            position: "Web developer",
-            duration: "2022 - present"
+            company: "University of Padova",
+            position: "Psychology student",
+            duration: "2023 - 2026"
+        },
+        {
+            company: "UNIPD CARS Python data analysis",
+            position: "Participant",
+            duration: "Fall 2024"
         },
         
     ]
@@ -68,26 +73,26 @@ const experience = {
 // education data
 const education = {
     icon: "/assets/resume/file.svg",
-    title: "My Education",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quasi? Totam magnam recusandae accusamus. Iure, quo non! Blanditiis, ",
+    title: "My Educational Journey",
+    description: "A diverse range of subjects, combining formal university studies with self-taught skills and independent learning",
     items: [
-        {
-            institution: "Makere university",
-            qualification: "Bachelor of Pharmacy",
-            duration: "2020 - 2023, Unfinished"
-        },
         {
             institution: "University of padova",
             qualification: "Bachelor of Psychological Science",
             duration: "2023 - 2026, Continuing"
         },
         {
-            institution: "Ultimate guide to react, next - Jonas Schmedtman",
-            qualification: "Full stack React, Next web development",
+            institution: "Udemy/Online resources",
+            qualification: "Full stack React, Next Development",
             duration: "2023"
         },
         {
-            institution: "Jonas Schmedtman",
+            institution: "UNIPD CARS courses",
+            qualification: "Python data analysis and visualisation, AI concepts, basic statistical analysis",
+            duration: "2024"
+        },
+        {
+            institution: "Udemy/Online resources",
             qualification: "Javascript, HTML, CSS web development",
             duration: "2022"
         },
@@ -102,9 +107,9 @@ const education = {
             duration: "2022 - 2024"
         },
         {
-            institution: "UNIPD CARS python data analysis and coursework",
-            qualification: "Python data analysis and visualisation, AI concepts, basic statistical analysis",
-            duration: "2024"
+            institution: "Makere university",
+            qualification: "Bachelor of Pharmacy",
+            duration: "2020 - 2023, Unfinished"
         },
     ]
 }
@@ -112,7 +117,7 @@ const education = {
 // skills data
 const skills = {
     title: "My skills",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quasi? Totam magnam recusandae accusamus. Iure, quo non! Blanditiis, eos qui ea accusantium ab magnam repellendus, ",
+    description: "I'm focused on modern web design with interactive features using JavaScript frameworks, and data handling and automation through Python and database technologies.",
     skillSet: [
         {icon: <FaHtml5/>, name: "html 5"},
         {icon: <FaCss3/>, name: "html 3"},
@@ -191,7 +196,7 @@ function Resume() {
                                 <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>{education.description}</p>
                             </div>
 
-                            <ScrollArea className="h-[400px]">
+                            <ScrollArea className="h-[400px] border-b border-pink-50/20 pb-2">
                                 <ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px]'>
                                     {education.items.map((item, i) => (
                                         <li key={i} className='bg-primary h-[184px] min-h-fit py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-2'>

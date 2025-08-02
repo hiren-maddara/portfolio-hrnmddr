@@ -6,38 +6,36 @@ import Link from 'next/link'
 const services = [
     {
         num: '01',
-        title: 'Web Development',
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ea error vitae sint earum enim obcaecati, reprehenderit neque quo! Sapiente ipsam placeat perferendis ab hic magni modi possimus laborum nobis.",
-        href: ""
+        title: 'Frontend Development',
+        description: "Crafting responsive and dynamic user interfaces that ensure seamless user experiences across devices. I specialise in translating design concepts into clean, efficient code using Javascript frameworks, React and Next.js",
+        href: "/work"
     },
     {
         num: '02',
-        title: 'UI/UX development',
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ea error vitae sint earum enim obcaecati, reprehenderit neque quo! Sapiente ipsam placeat perferendis ab hic magni modi possimus laborum nobis.",
-        href: ""
+        title: 'Fullstack Integration',
+        description: "Building robust applications by integrating frontend and backend systems. Connecting SQL and NoSQL databases and REST APIs to deliver complete solutions that power projects.",
+        href: "/work"
     },
     {
         num: '03',
-        title: 'Full stack Integration',
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ea error vitae sint earum enim obcaecati, reprehenderit neque quo! Sapiente ipsam placeat perferendis ab hic magni modi possimus laborum nobis.",
-        href: ""
+        title: 'UI/UX Design',
+        description: "Designing intuitive and engaging interfaces with a focus on user-centered principles. I'm comfortable with pen and paper design, and technolgies like tailwindCSS, React.",
+        href: "/work"
     },
     {
         num: '04',
         title: 'Research Assistance',
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ea error vitae sint earum enim obcaecati, reprehenderit neque quo! Sapiente ipsam placeat perferendis ab hic magni modi possimus laborum nobis.",
-        href: ""
+        description: "Providing thorough research support and project development, including literature review, critical analysis and synthesis of data. Fueled by my desire to learn and engage topics with depth. I'm comfortable with basic statistical methods, softwares like R, Jasp, Python.",
+        href: "/work"
     },
 ]
-
-import {motion} from 'framer-motion'
 
 function Services() {
     return (
         <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
-            <h1 className="h1 text-accent text-center mb-12"> 
+            <h3 className="text-4xl text-accent text-center mb-12"> 
                 Here's what I do
-            </h1>
+            </h3>
             
             <div className="container grid grid-cols-1 md:grid-cols-2 gap-[60px] mb-8">
                     {services.map((service, index) => {
@@ -48,7 +46,7 @@ function Services() {
                                 <div className='text-5xl font-extrabold text-transparent text-outline group-hover:!text-outline-hover transition-all duration-300'>
                                     {service.num}
                                 </div>
-                                <Link href={service.href} className='w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-300 flex justify-center items-center hover:-rotate-45'>
+                                <Link href={service.href} className='w-[60px] h-[60px] rounded-full bg-white group-hover:bg-accent transition-all duration-300 flex justify-center items-center hover:-rotate-45'>
                                     <BsArrowDownRight className='text-primary text-3xl' />
                                 </Link>
                             </div>
