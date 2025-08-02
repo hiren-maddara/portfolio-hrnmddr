@@ -1,5 +1,7 @@
 {
   "name": "hrn-mddr-portfolio",
+  "author": "Hiren M. Maddara",
+  "repository": "https://github.com/hiren-maddara/portfolio-hrnmddr",
   "version": "0.1.0",
   "private": true,
   "scripts": {

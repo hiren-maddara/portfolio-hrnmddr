@@ -120,7 +120,7 @@ function Work() {
                             <p className="text-white/60">{project.description}</p>
 
                             {/* stack */}
-                            <ul className="flex gap-4">
+                            <ul className="flex gap-4 flex-wrap">
                                 {project.stack.map((item, index) => (
                                     <li className="text-xl text-accent" key={index}>{item.name}
                                     
@@ -168,7 +168,7 @@ function Work() {
                         </div>
                     </div>
                     
-                    <div className="w-full xl:w-[50%]">
+                    <div className="w-full max-w-full xl:max-w-[50%] xl:w-[50%]">
                         <Swiper spaceBetween={30} slidesPerView={1} className="xl:h-[520px] mb-12"
                         onSlideChange={handleSlideChange}
                         >
@@ -182,7 +182,7 @@ function Work() {
 
                                         {/* image */}
                                         <div className="relative w-full h-full">
-                                            <Image src={project.image} fill className="object-top object-cover"
+                                            <Image src={project.image} loading="lazy" fill className="object-top object-cover"
                                             alt={project.description} />
                                         </div>
                                     </div>
