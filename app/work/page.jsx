@@ -14,44 +14,79 @@ const projects = [
     {
         num: "01",
         category: "frontend",
-        title: "project 1",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti sed molestias autem accusantium natus dolorem consequatur sapiente? Quas, impedit!",
+        title: "Peer2peer consorts",
+        description: "Peer2peer Consorts is a modern and responsive site I designed for a money lending start up. It is complete with user-friendly and simple yet catchy graphics",
         stack: [
-            {name: "HTML 5"},
-            {name: "CSS 3"},
+            {name: "JSX"},
+            {name: "tailwindCSS"},
             {name: "Javascript"},
+            {name: "Typescript"},
+            {name: "Next"},
+            {name: "React"},
         ],
-        image: "/assets/work/thumb1.png",
-        live: "",
-        github: ""
+        image: "/assets/work/peer2peerconsorts.png",
+        live: "https://ptop-consorts.vercel.app/",
+        github: "https://github.com/hiren-maddara/peer-consorts"
     },
     {
         num: "02",
-        category: "fullstack",
-        title: "project 2",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti sed molestias autem accusantium natus dolorem consequatur sapiente? Quas, impedit!",
+        category: "Backend",
+        title: "",
+        description: "This includes python implementation of supervised and unsupervised Machine Learning algorithms, with extrapolation to real world datasets. It was a part of my AI university coursework",
         stack: [
-            {name: "Next.js"},
-            {name: "TailwindCSS"},
-            {name: "Supabase"},
+            {name: "Python"},
+            {name: "Jupyter"},
+            {name: "SKLearn"},
         ],
-        image: "/assets/work/thumb2.png",
-        live: "",
-        github: ""
+        image: "/assets/work/AIML.png",
+        live: "https://github.com/hiren-maddara/AI",
+        github: "https://github.com/hiren-maddara/AI"
     },
     {
         num: "03",
-        category: "backend",
-        title: "project 1",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti sed molestias autem accusantium natus dolorem consequatur sapiente? Quas, impedit!",
+        category: "Fullstack",
+        title: "Case Cobra",
+        description: "A fullstack project for a hypothetical custom phone case company, including a landing page, user authentication, authorisation and file upload and management with Kindle, Database integration with CRUD API operations using Prisma, and an admin dashboard",
         stack: [
-            {name: "python"},
-            {name: "CSS 3"},
+            {name: "Next"},
+            {name: "Kindle"},
+            {name: "Prisma"},
             {name: "Javascript"},
+            {name: "PostCSS"},
         ],
-        image: "/assets/work/thumb1.png",
-        live: "",
-        github: ""
+        image: "/assets/work/casecobra.png",
+        live: "https://casecobra-shopdev.vercel.app/",
+        github: "https://github.com/hiren-maddara/casecobra-shop"
+    },
+    {
+        num: "04",
+        category: "Backend",
+        title: "Python data analysis",
+        description: "This includes basics of Python for data manipulation, analysis and visualisation as part of the CARS University of padova course offered by PhD. Sina Shafiezadeh. Includes a certificate of completion",
+        stack: [
+            {name: "Python"},
+            {name: "Jupyter"},
+            {name: "Google Colab"},
+            {name: ".csv"},
+        ],
+        image: "/assets/work/pydataanalysis.png",
+        live: "https://github.com/hiren-maddara/py-data_analysis",
+        github: "https://github.com/hiren-maddara/py-data_analysis"
+    },
+    {
+        num: "05",
+        category: "Fullstack Desktop",
+        title: "Microsoft Parts Spares",
+        description: "This is an intranet business management system for a workshop/spare company and vehicle technical services, to track their cash flow, vehicle services, spare flow and sales, plus managing the clients and employees. A fullstack project to run in the browser while connecting to a native SQLite database via Sequelize ORM for safety and full management, includes CRUD operations, Admin dashboard, User authentication, UI customization, Chart feedback and Spreadsheet-like data management",
+        stack: [
+            {name: "Next"},
+            {name: "Sequelize"},
+            {name: "SQLite3"},
+            {name: "Node"},
+        ],
+        image: "/assets/work/mcparts.png",
+        live: "https://github.com/hiren-maddara/mcparts",
+        github: "https://github.com/hiren-maddara/mcparts"
     },
 ]
 
@@ -100,7 +135,7 @@ function Work() {
                             {/* buttons */}
                             <div className="flex items-center gap-4">
                                 {/* live button */}
-                                <Link href={project.live}>
+                                <Link href={project.live} target="_blank" rel="noopener noreferrer" >
                                 <TooltipProvider delayDuration={100}>
                                     <Tooltip>
                                         <TooltipTrigger className="w-[70px] h-[70px] bg-white/5 rounded-full flex justify-center items-center group">
@@ -115,7 +150,7 @@ function Work() {
                                 </Link>
 
                                 {/* github button */}
-                                <Link href={project.github}>
+                                <Link href={project.github} target="_blank" rel="noopener noreferrer">
                                 <TooltipProvider delayDuration={100}>
                                     <Tooltip>
                                         <TooltipTrigger className="w-[70px] h-[70px] bg-white/5 rounded-full flex justify-center items-center group">
@@ -147,7 +182,7 @@ function Work() {
 
                                         {/* image */}
                                         <div className="relative w-full h-full">
-                                            <Image src={project.image} fill className="object-cover"
+                                            <Image src={project.image} fill className="object-top object-cover"
                                             alt={project.description} />
                                         </div>
                                     </div>
