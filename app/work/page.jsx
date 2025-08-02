@@ -55,8 +55,6 @@ const projects = [
     },
 ]
 
-
-
 function Work() {
     const [project, setProject] = useState(projects[0])
 

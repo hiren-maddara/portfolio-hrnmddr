@@ -9,10 +9,10 @@ function WorkSliderButtons({containerStyles, btnStyles, iconStyles}) {
     return (
         <div className={containerStyles}>
             <button className={btnStyles}>
-                <PiCaretLeftBold className={iconStyles} onClick={()=>swiper.slidePrev()} />
+                <PiCaretLeftBold className={iconStyles} onClick={()=>swiper.isBeginning ? swiper.slideTo(swiper.slides.length - 1) : swiper.slidePrev()} />
             </button>
             <button className={btnStyles}>
-                <PiCaretRightBold className={iconStyles} onClick={()=>swiper.slideNext()} />
+                <PiCaretRightBold className={iconStyles} onClick={()=> swiper.isEnd ? swiper.slideTo(0) : swiper.slideNext()} />
             </button>
         </div>
     )
