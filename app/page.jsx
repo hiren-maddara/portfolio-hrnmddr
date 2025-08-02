@@ -16,7 +16,7 @@ export default function Home() {
             </h1>
 
             <p className="max-w-[75vw] mx-auto mb-9 mt-4 text-white/80">
-              I love a multifacated approach to problem-solving, integrating science and technology, the humanities and philosophy.
+              I write Javascript! I love a multifacated approach to problem-solving, integrating science and technology, the humanities and philosophy.
               Welcome to my site. Explore and learn more about my work. I’m excited to connect, collaborate, and grow together through ideas. 
             </p>
 
