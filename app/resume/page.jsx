@@ -107,7 +107,7 @@ const education = {
             duration: "2022 - 2024"
         },
         {
-            institution: "Makere university",
+            institution: "Makerere university",
             qualification: "Bachelor of Pharmacy",
             duration: "2020 - 2023, Unfinished"
         },

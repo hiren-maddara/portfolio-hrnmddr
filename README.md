@@ -1,6 +1,6 @@
 ## Hiren M. Maddara
 This is my portfolio project
-See live demo at 
-[http://localhost:3000](http://localhost:3000) 
+See it live at 
+[hrnmddr.netlify.app](hrnmddr.netlify.app) 
 
 Feel free to use the code as you wish
