@@ -30,6 +30,22 @@ const projects = [
     },
     {
         num: "02",
+        category: "Fullstack Desktop",
+        title: "Microsoft Parts Spares",
+        description: "This is a full-stack intranet business management system I built for a vehicle workshop, spare parts supplier, and technical services provider where I worked. It replaces inefficient manual data entry and improves tracking of cash flow, vehicle services, inventory, sales, clients, and employees. The web app connects to a native SQLite3 database via Sequelize ORM for secure, structured storage, and syncs with a Supabase database for remote access and backups—both schemed from scratch. Key features include full CRUD operations, an admin dashboard, user authentication, a customizable UI, interactive charts, and spreadsheet-style data management",
+        stack: [
+            {name: "Next"},
+            {name: "Sequelize"},
+            {name: "SQLite3"},
+            {name: "Supabase/PostgreSQL"},
+            {name: "Node"},
+        ],
+        image: "/assets/work/mcparts.png",
+        live: "https://mcparts.netlify.app",
+        github: "https://github.com/hiren-maddara/mcparts"
+    },
+    {
+        num: "03",
         category: "Backend",
         title: "",
         description: "This includes python implementation of supervised and unsupervised Machine Learning algorithms, with extrapolation to real world datasets. It was a part of my AI university coursework",
@@ -43,7 +59,7 @@ const projects = [
         github: "https://github.com/hiren-maddara/AI"
     },
     {
-        num: "03",
+        num: "04",
         category: "Fullstack",
         title: "Case Cobra",
         description: "A fullstack project for a hypothetical custom phone case company, including a landing page, user authentication, authorisation and file upload and management with Kindle, Database integration with CRUD API operations using Prisma, and an admin dashboard",
@@ -59,7 +75,7 @@ const projects = [
         github: "https://github.com/hiren-maddara/casecobra-shop"
     },
     {
-        num: "04",
+        num: "05",
         category: "Backend",
         title: "Python data analysis",
         description: "This includes basics of Python for data manipulation, analysis and visualisation as part of the CARS University of padova course offered by PhD. Sina Shafiezadeh. Includes a certificate of completion",
@@ -73,21 +89,7 @@ const projects = [
         live: "https://github.com/hiren-maddara/py-data_analysis",
         github: "https://github.com/hiren-maddara/py-data_analysis"
     },
-    {
-        num: "05",
-        category: "Fullstack Desktop",
-        title: "Microsoft Parts Spares",
-        description: "This is an intranet business management system for a workshop/spare company and vehicle technical services, to track their cash flow, vehicle services, spare flow and sales, plus managing the clients and employees. A fullstack project to run in the browser while connecting to a native SQLite database via Sequelize ORM for safety and full management, includes CRUD operations, Admin dashboard, User authentication, UI customization, Chart feedback and Spreadsheet-like data management",
-        stack: [
-            {name: "Next"},
-            {name: "Sequelize"},
-            {name: "SQLite3"},
-            {name: "Node"},
-        ],
-        image: "/assets/work/mcparts.png",
-        live: "https://github.com/hiren-maddara/mcparts",
-        github: "https://github.com/hiren-maddara/mcparts"
-    },
+    
 ]
 
 function Work() {
@@ -99,6 +101,8 @@ function Work() {
         //update project state based on current index
         setProject(projects[currentIndex])
     }
+    
+
 
     return (
         <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0">
