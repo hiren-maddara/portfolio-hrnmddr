@@ -13,13 +13,13 @@
   --font-primary: var(--font-jetbrainsMono);
 
   --color-primary: #141820;
-    --color-accent: #e8a702;
-    --color-accent-hover: #fdbf22
+  --color-accent: #e8a702;
+    --color-accent-hover: #fdbf22;
 }
 
 @layer base {
   body {
-    @apply font-primary bg-primary text-white leading-loose;
+    @apply font-primary bg-gray-300 text-gray-950 leading-loose;
   }
 }
 .h1 {
@@ -39,7 +39,4 @@
 
 @utility text-outline-hover {
   -webkit-text-stroke: 1px #e8a702;
-}
-.container {
-  @apply m-auto p-[15px]
 }
